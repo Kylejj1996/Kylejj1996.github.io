@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Information request form" />
+    <title>Request information form</title>
+    <!--Connecting the html document to the CSS-->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <div class="container">
+      <header>
+        <!--The Navigation of the website-->
+        <nav>
+          <ul>
+            <li><a href="index.html" title="Home page"><span>Home</span></a></li>
+            <li><a href="portfolio.html" title="Portfolio"><span>Portfolio</span></a></li>
+            <li><a href="contact.html" title="Contact Form"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="home">
+        <h1>Get in touch</h1>
+        <p></p>
+        <!--The form to get more information from us-->
+        <form
+          id="request-info"
+          action="mailto:kjjohnson138623@mymail.tstc.edu"
+          method="post"
+        >
+          <fieldset>
+            <!--A form to get the users name-->
+            <div class="formSpace">
+              <label for="name">Name:</label>
+              <input name="name" id="name" type="text" /><br />
+            </div>
+            <!--A form to get the users email-->
+            <label for="Email">Email:</label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="you@email.com"
+            /><br />
+            <!--A form to get the users age-->
+            <div class="formSpace">
+              <label for="age">Age:</label>
+              <input name="age" id="age" type="text" /><br />
+            </div>
+            <!--A form to get the users phone number-->
+            <div class="formSpace">
+              <label for="phone">Phone Number:</label>
+              <input name="phone" id="phone" type="tel" placeholder="123-456-7890" />
+            </div>
+            <!--A form to get the date they submit the form-->
+            <div class="formSpace">
+              <label for="date">Date:</label>
+              <input id="date" name="date" type="date" /><br />
+            </div>
+            <fieldset>
+              <legend>About you</legend>
+              <!--A form with a select list to get information about what interests the user-->
+              <div class="formSpace">
+                <label for="selectlist">Have you ever been to a EDM event?</label>
+                <select id="selectlist" name="selectlist">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <fieldset>
+                <legend>What interests you?</legend>
+                <!--A form with a check box with 5 items that can be selected-->
+                <div class="formSpace">
+                  <input type="checkbox" id="chill" name="interests" value="chill" />
+                  <label for="chill">Chill Vibes</label>
+                </div>
+                <div class="formSpace">
+                  <input type="checkbox" id="energy" name="interests" value="energy" />
+                  <label for="energy">High Energy</label>
+                </div>
+                <div class="formSpace">
+                  <input type="checkbox" id="music" name="interests" value="music" />
+                  <label for="music">Love for music</label>
+                </div>
+                <div class="formSpace">
+                  <input type="checkbox" id="nature" name="interests" value="nature" />
+                  <label for="nature">Nature scene</label>
+                </div>
+                <div class="formSpace">
+                  <input type="checkbox" id="city" name="interests" value="city" />
+                  <label for="city">City scene</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>How can we contact you?</legend>
+                <!--A form using a radio form to see how the user would like to be contacted-->
+                <input id="email" name="contact" type="radio" value="email" />
+                <label for="Email">Email</label><br />
+
+                <input id="call" name="contact" type="radio" value="call" />
+                <label for="Call">Call</label><br />
+
+                <input id="text" name="contact" type="radio" value="text" />
+                <label for="text">Text</label><br />
+              </fieldset>
+            </fieldset>
+            <div class="form-buttons">
+              <!--A form that allows the user to submit the entire form-->
+              <button class="submit" type="submit">Submit</button>
+              <!--A form that allows the user to reset the form-->
+              <button class="reset" type="reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+      <!--The footer with a paragraph tag that has the copyright-->
+      <footer>
+        <p>
+          &copy; Copyright 2023 -
+          <a class="footDesign" href="mailto:kjjohnson138623@mymail.tstc.edu"
+            >Kyle Johnson</a
+          >. Fort Worth, TX. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
