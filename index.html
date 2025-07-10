@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Home Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Home page--</title>
+    <!--Linking to CSS-->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <!--Linking to JavaScript-->
+    <script src="JS/script.js" defer></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <div class="container">
+      <!--The Navigation of the website-->
+      <header>
+        <!--The Navigation of the website-->
+        <nav>
+          <ul>
+            <li><a href="index.html" title="Home page"><span>Home</span></a></li>
+            <li><a href="portfolio.html" title="Portfolio"><span>Portfolio</span></a></li>
+            <li><a href="contact.html" title="Contact Form"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="home">
+        <!--The main heading of the page-->
+        <h1 id="dynamic-heading"><span class="typed-text"></span></h1>
+        <h2 id="typed-title"><span class="typed-text"></span></h2>
+        <!-- About me Section -->
+        <section class="about-me">
+          <div class="about-wrapper">
+            <img src="images/kyle.jpg" alt="Kyle Johnson" class="about-photo">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>
+                I'm a detail-oriented and passionate Computer Programming Technology student at Texas State Technical College.
+                With a strong foundation in C, C#, Java, and web development, I enjoy building intuitive user interfaces,
+                solving logical challenges, and continuously learning new technologies.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+        <h2 class="feature">Featured Projects</h2>
+        <div class="project-list">
+          <article class="project">
+            <img src="images/KeyboardVault/KeyboardVault.jpg" alt="Keyboard Vault Application project screenshot" />
+            <h3>Keyboard Vault Application</h3>
+            <p>A desktop retail management system where customers can shop and place orders, while managers have full control over inventory, 
+              promo codes, employees, and customer records. Includes role-based login, threading for performance, and a local SQLite database for data storage.</p>
+            <a href="keyboardVault.html" class="btn">View Project</a>
+          </article>
+          <article class="project">
+            <img src="images/festivalsWebsite.jpg" alt="Screenshot of Festivals Website" />
+            <h3>Festivals Website</h3>
+            <p>A responsive and user-friendly guide to camping music festivals. Features include navigation sections for preparation tips, 
+              a curated list of favorite festivals, and a request info form where users can reach out for more details. Built with clean design principles and accessible UI elements.</p>
+            <a href="project2.html" class="btn">View Project</a>
+          </article>
+        </div>
+        </section>
+      </main>
+      <!--The footer with a paragraph tag that has the copyright-->
+      <footer>
+        <p>
+          &copy; Copyright 2025 -
+          <a class="footDesign" href="mailto:kjjohnson138623@mymail.tstc.edu"
+            >Kyle Johnson</a
+          >. Fort Worth, TX. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
