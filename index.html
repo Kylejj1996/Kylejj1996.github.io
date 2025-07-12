@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Home Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Home page--</title>
+    <!--Linking to CSS-->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <!--Linking to JavaScript-->
+    <script src="JS/script.js" defer></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <header>
+        <!--The Navigation of the website-->
+        <nav>
+          <ul>
+            <li><a href="index.html" title="Home page"><span>Home</span></a></li>
+            <li><a href="projects.html" title="Projects"><span>Projects</span></a></li>
+            <li><a href="contact.html" title="Contact Form"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+      <main class="home">
+        <!--The main heading of the page-->
+        <h1 id="dynamic-heading"><span class="typed-text"></span></h1>
+        <h2 id="typed-title"><span class="typed-text"></span></h2>
+        <!-- About me Section -->
+        <section class="about-me">
+          <div class="about-wrapper">
+            <img src="images/kyle.jpg" alt="Kyle Johnson" class="about-photo">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>
+                I'm a passionate Software Developer with a strong foundation in C, C#, Java, and web development, I enjoy building intuitive user interfaces,
+                solving logical challenges, and continuously learning new technologies.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <article class="skill">
+              <h3>Frontend Development</h3>
+              <ul class="skill-list">
+                <li><img src="images/Logos/HTMLLogo.png" alt="HTML Logo"><span>HTML</span></li>
+                <li><img src="images/Logos/CSSLogo.png" alt="CSS Logo"><span>CSS</span></li>
+                <li><img src="images/Logos/JS.png" alt="JavaScript Logo"><span>JavaScript</span></li>
+                <li><img src="images/Logos/FigmaLogo.png" alt="Figma"><span>Figma</span></li>
+                <li><img src="images/Logos/PhotoShopLogo.png" alt="Photoshop"><span>Photoshop</span></li>
+                <li><img src="images/Logos/UnityLogo.png" alt="Unity"><span>Unity</span></li>
+              </ul>
+            </article>
+            <article class="skill">
+              <h3>Backend Development</h3>
+              <ul class="skill-list">
+                <li><img src="images/Logos/CLogo.png" alt="C Logo"><span>C</span></li>
+                <li><img src="images/Logos/CSharpLogo.png" alt="C# Logo"><span>C#</span></li>
+                <li><img src="images/Logos/JavaLogo.png" alt="Java Logo"><span>Java</span></li>
+                <li><img src="images/Logos/MySQLLogo.png" alt="MySQL"><span>MySQL Workbench</span></li>
+                <li><img src="images/Logos/MSSMSLogo.png" alt="SQL Server"><span>MS SQL</span></li>
+                <li><img src="images/Logos/FirebaseLogo.png" alt="Firebase"><span>Google Firebase</span></li>
+              </ul>
+            </article>
+
+            <article class="skill">
+              <h3>Development Tools</h3>
+              <ul class="skill-list">
+                <li><img src="images/Logos/VisualStudioCodeLogo.png" alt="VS Code"><span>VS Code</span></li>
+                <li><img src="images/Logos/VisualStudioCommunityLogo.png" alt="Visual Studio"><span>Visual Studio</span></li>
+                <li><img src="images/Logos/IntelliJLogo.png" alt="IntelliJ"><span>IntelliJ IDEA</span></li>
+                <li><img src="images/Logos/NetbeansLogo.png" alt="NetBeans"><span>Apache NetBeans</span></li>
+                <li><img src="images/Logos/GitHubLogo.png" alt="GitHub"><span>GitHub</span></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!--The footer-->
+      <footer>
+        <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/kyle-johnson-845718335/" target="_blank"><img src="images/LI-Logo.png" alt="LinkedIn Profile"/></a>
+                <a href="https://github.com/Kylejj1996" target="_blank"><img src="images/github-logo.png" alt="GitHub Profile"/></a>
+              </div>
+        <p class="footer-credit">&copy; Copyright 2025 - <a class="footDesign" href="mailto:kjjohnson138623@mymail.tstc.edu">Kyle Johnson</a>. All rights reserved.</p>
+      </footer>
+  </body>
+</html>
