@@ -365,6 +365,11 @@ li {
   transform: translateY(-9px);
 }
 
+.degree{
+  text-align: center;
+  padding: 0;
+}
+
 .grad-date {
   display: block;
   margin-top: 4px;
@@ -1509,3 +1514,4 @@ textarea {
   }
 
 }
+
